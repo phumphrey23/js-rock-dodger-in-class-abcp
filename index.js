@@ -89,7 +89,7 @@ function moveDodgerLeft() {
   window.requestAnimationFrame(function(){
     var left = positionToInteger($("#dodger").style.left)
     if(left>0){
-      $("#dodger").style.left = '${left} -= 4 px'
+      dodger.style.left = `${left - 4}px`
     }
   })
   }
@@ -99,7 +99,7 @@ function moveDodgerRight() {
   window.requestAnimationFrame(function(){
     var left = positionToInterger($("#dodger").style.left)
     if(left<360){
-      $("#dodger").style.left = '${left} += 4 px'
+      dodger.style.left = `${left + 4}px`
     }
   })
 }
