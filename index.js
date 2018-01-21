@@ -87,6 +87,7 @@ function moveDodger(e) {
 
 function moveDodgerLeft() {
   window.requestAnimationFrame(function(){
+    var dodger = document.getElementById("dodger")
     var left = positionToInteger(DODGER.style.left)
     if(left>0){
       dodger.style.left = `${left - 4}px`
