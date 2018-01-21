@@ -100,7 +100,7 @@ function moveDodgerRight() {
     var dodger = document.getElementById("dodger")
     var left = positionToInterger(DODGER.style.left)
     if(left<360){
-      DODGER.style.left = `${left + 4}px`
+      dodger.style.left = `${left + 4}px`
     }
   })
 }
